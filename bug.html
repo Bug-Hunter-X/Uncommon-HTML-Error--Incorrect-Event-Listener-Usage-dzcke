@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <div id="myDiv">
+    This is some text.
+  </div>
+
+  <script>
+    // Incorrect way to add event listener in older browsers
+    document.getElementById("myDiv").attachEvent('onclick', function(){
+      alert('Error: The event listener might not work properly in modern browsers.');
+    });
+  </script>
+</body>
+</html>
